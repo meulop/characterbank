@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Character Bank",
+  "description": "Save your additional characters for a rainy day.",
+  "version": "0.1",
+  "content_scripts": [{
+    "matches": ["https://twitter.com/*"],
+	"js": ["jquery-3.2.1.js","mutation-summary.js","characterbank.js"]
+  }],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
